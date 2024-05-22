@@ -1,0 +1,21 @@
+{
+  "name": "weather-takehome-backend",
+  "version": "1.0.0",
+  "description": "express backend for weather app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "author": "Ronak Hirpara",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "tsx": "^4.10.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12"
+  }
+}
