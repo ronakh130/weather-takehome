@@ -5,7 +5,7 @@ const weatherController = {
     const { city, country } = req.params;
     await axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=70b5d8deef61d46c309034565ea96ede&units=Imperial`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${process.env.API_URL}&units=Imperial`
       )
       .then((apiRes) => {
         res.locals.data = apiRes.data;
